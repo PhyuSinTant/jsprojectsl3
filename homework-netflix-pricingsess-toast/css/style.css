@@ -1,0 +1,236 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+	background: #f4f4f4;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	flex-direction: column;
+}
+
+.bars{
+	background: transparent;
+	border:none;
+
+}
+
+.bars .fa-bars{
+	color: #444;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.nav{
+	transition: all 2.5s;
+	transform: translateY(-120%);
+}
+
+.nav.visible{
+	transform: translateY(0);
+}
+
+.nav-black.visible{
+	transition-delay: 0;
+}
+
+.nav-blue.visible{
+	transition-delay: 0.4;
+}
+
+.nav-red.visible{
+	transition-delay: 0.8;
+}
+
+.nav-green.visible{
+	transition-delay: 1.2;
+}
+
+.nav-white.visible{
+	transition-delay: 3;
+}
+
+/*.fa-toggle-off,.fa-toggle-on{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+*/
+.nav-black{
+	width: 100%;
+	height: 100%;
+
+	background-color: #9c3091;
+
+	/*box-shadow: 5px 5px 20px #444;*/
+
+	transition-delay: 3;
+	
+
+}
+
+.nav.visible{
+
+}
+
+.nav-blue{
+	width: 100%;
+	height: 95%;
+
+	background-color:red;
+
+	transition-delay: 2.5;
+
+	
+}
+
+.nav-red{
+	width: 100%;
+	height: 95%;
+
+	background-color:#000;
+
+	transition-delay: 1.9;
+
+	
+}
+
+.nav-green{
+	width: 100%;
+	height: 95%;
+
+	background-color: #7c25ba;
+
+	transition-delay: 1.5;
+
+	
+}
+
+.nav-white{
+	width: 100%;
+	height: 95%;
+
+	background-color: #fff;
+
+	position: relative;
+
+	transition-delay: 0;
+
+	
+}
+
+.fa-times{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+
+}
+
+.controls{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: absolute;
+	top: 100px;
+	left: 38%;
+}
+
+.underlines{
+	/*border-bottom:4px solid #444;*/
+	width: 200px;
+	height: 4px;
+	background-color: #444;
+
+	position: absolute;
+	top: 75px;
+	left: 42%;
+}
+
+.fa-toggle-on{
+	color:#682bbd;
+}
+
+.controls .check{
+	display: none;
+}
+
+.box{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	box-shadow: 2px 3px 20px rgba(0,0,0,0.6);
+
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.box div{
+	display: inline-block;
+}
+
+.box .women{
+	display: none;
+}
+
+.box .men{
+	display: block;
+
+}
+.div{
+	position: relative;
+	
+}
+
+
+/*For toast noti*/
+span.active{
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	font-size: 17px;
+	text-align: center;
+	line-height: 40px;
+
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	transform: translate(-50%,-50%);
+
+	transition:all 0.4s;
+
+	
+
+	
+}
+
+span{
+	display: none;
+}
+
+span:hover{
+	background: rgba(0,0,0,0.9);
+}
+
+/*Auto Text Effect*/
+#text{
+	position: absolute;
+	/*display: block;
+	padding: 50px 30px;*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: pink;
+}
